@@ -3,5 +3,6 @@ package insosocialproject;
 
 public class PrivacidadGrupo {
     
-    boolean edadregis, userregis;
+    private boolean edadregis, userregis;
+    private int vecesdenun;
 }
