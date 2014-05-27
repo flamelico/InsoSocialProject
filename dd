@@ -1,0 +1,158 @@
+[33mcommit 147ba01f564c6c08cdb3ec990805c92d3731cb7f[m
+Author: Victor Calderon <flamelico@gmail.com>
+Date:   Mon May 26 20:16:21 2014 -0500
+
+    Prueba del Commit
+
+[1mdiff --git a/HEAD b/HEAD[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cb089cd[m
+[1m--- /dev/null[m
+[1m+++ b/HEAD[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32mref: refs/heads/master[m
+[1mdiff --git a/build.xml b/build.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d6c461e[m
+[1m--- /dev/null[m
+[1m+++ b/build.xml[m
+[36m@@ -0,0 +1,74 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<!-- You may freely edit this file. See commented blocks below for -->[m
+[32m+[m[32m<!-- some examples of how to customize the build. -->[m
+[32m+[m[32m<!-- (If you delete it and reopen the project it will be recreated.) -->[m
+[32m+[m[32m<!-- By default, only the Clean and Build commands use this build script. -->[m
+[32m+[m[32m<!-- Commands such as Run, Debug, and Test only use this build script if -->[m
+[32m+[m[32m<!-- the Compile on Save feature is turned off for the project. -->[m
+[32m+[m[32m<!-- You can turn off the Compile on Save (or Deploy on Save) setting -->[m
+[32m+[m[32m<!-- in the project's Project Properties dialog box.-->[m
+[32m+[m[32m<project name="InsoSocialProject" default="default" basedir=".">[m
+[32m+[m[32m    <description>Builds, tests, and runs the project InsoSocialProject.</description>[m
+[32m+[m[32m    <import file="nbproject/build-impl.xml"/>[m
+[32m+[m[32m    <!--[m
+[32m+[m
+[32m+[m[32m    There exist several targets which are by default empty and which can be[m[41m [m
+[32m+[m[32m    used for execution of your tasks. These targets are usually executed[m[41m [m
+[32m+[m[32m    before and after some main targets. They are:[m[41m [m
+[32m+[m
+[32m+[m[32m      -pre-init:                 called before initialization of project properties[m
+[32m+[m[32m      -post-init:                called after initialization of project properties[m
+[32m+[m[32m      -pre-compile:              called before javac compilation[m
+[32m+[m[32m      -post-compile:             called after javac compilation[m
+[32m+[m[32m      -pre-compile-single:       called before javac compilation of single file[m
+[32m+[m[32m      -post-compile-single:      called after javac compilation of single file[m
+[32m+[m[32m      -pre-compile-test:         called before javac compilation of JUnit tests[m
+[32m+[m[32m      -post-compile-test:        called after javac compilation of JUnit tests[m
+[32m+[m[32m      -pre-compile-test-single:  called before javac compilation of single JUnit test[m
+[32m+[m[32m      -post-compile-test-single: called after javac compilation of single JUunit test[m
+[32m+[m[32m      -pre-jar:                  called before JAR building[m
+[32m+[m[32m      -post-jar:                 called after JAR building[m
+[32m+[m[32m      -post-clean:               called after cleaning build products[m
+[32m+[m
+[32m+[m[32m    (Targets beginning with '-' are not intended to be called on their own.)[m
+[32m+[m
+[32m+[m[32m    Example of inserting an obfuscator after compilation could look like this:[m
+[32m+[m
+[32m+[m[32m        <target name="-post-compile">[m
+[32m+[m[32m            <obfuscate>[m
+[32m+[m[32m                <fileset dir="${build.classes.dir}"/>[m
+[32m+[m[32m            </obfuscate>[m
+[32m+[m[32m        </target>[m
+[32m+[m
+[32m+[m[32m    For list of available properties check the imported[m[41m [m
+[32m+[m[32m    nbproject/build-impl.xml file.[m[41m [m
+[32m+[m
+[32m+[m
+[32m+[m[32m    Another way to customize the build is by overriding existing main targets.[m
+[32m+[m[32m    The targets of interest are:[m[41m [m
+[32m+[m
+[32m+[m[32m      -init-macrodef-javac:     defines macro for javac compilation[m
+[32m+[m[32m      -init-macrodef-junit:     defines macro for junit execution[m
+[32m+[m[32m      -init-macrodef-debug:     defines macro for class debugging[m
+[32m+[m[32m      -init-macrodef-java:      defines macro for class execution[m
+[32m+[m[32m      -do-jar-with-manifest:    JAR building (if you are using a manifest)[m
+[32m+[m[32m      -do-jar-without-manifest: JAR building (if you are not using a manifest)[m
+[32m+[m[32m      run:                      execution of project[m[41m [m
+[32m+[m[32m      -javadoc-build:           Javadoc generation[m
+[32m+[m[32m      test-report:              JUnit report generation[m
+[32m+[m
+[32m+[m[32m    An example of overriding the target for project execution could look like this:[m
+[32m+[m
+[32m+[m[32m        <target name="run" depends="InsoSocialProject-impl.jar">[m
+[32m+[m[32m            <exec dir="bin" executable="launcher.exe">[m
+[32m+[m[32m                <arg file="${dist.jar}"/>[m
+[32m+[m[32m            </exec>[m
+[32m+[m[32m        </target>[m
+[32m+[m
+[32m+[m[32m    Notice that the overridden target depends on the jar target and not only on[m[41m [m
+[32m+[m[32m    the compile target as the regular run target does. Again, for a list of available[m[41m [m
+[32m+[m[32m    properties which you can use, check the target you are overriding in the[m
+[32m+[m[32m    nbproject/build-impl.xml file.[m[41m [m
+[32m+[m
+[32m+[m[32m    -->[m
+[32m+[m[32m</project>[m
+[1mdiff --git a/config b/config[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8af36ae[m
+[1m--- /dev/null[m
+[1m+++ b/config[m
+[36m@@ -0,0 +1,10 @@[m
+[32m+[m[32m[core][m
+[32m+[m	[32mrepositoryformatversion = 0[m
+[32m+[m	[32mfilemode = false[m
+[32m+[m	[32mbare = true[m
+[32m+[m	[32msymlinks = false[m
+[32m+[m	[32mignorecase = true[m
+[32m+[m	[32mhideDotFiles = dotGitOnly[m
+[32m+[m	[32msharedrepository = 2[m
+[32m+[m[32m[receive][m
+[32m+[m	[32mdenyNonFastforwards = true[m
+[1mdiff --git a/description b/description[m
+[1mnew file mode 100644[m
+[1mindex 0000000..498b267[m
+[1m--- /dev/null[m
+[1m+++ b/description[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32mUnnamed repository; edit this file 'description' to name the repository.[m
+[1mdiff --git a/hooks/applypatch-msg.sample b/hooks/applypatch-msg.sample[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8b2a2fe[m
+[1m--- /dev/null[m
+[1m+++ b/hooks/applypatch-msg.sample[m
+[36m@@ -0,0 +1,15 @@[m
+[32m+[m[32m#!/bin/sh[m
+[32m+[m[32m#[m
+[32m+[m[32m# An example hook script to check the commit log message taken by[m
+[32m+[m[32m# applypatch from an e-mail message.[m
+[32m+[m[32m#[m
+[32m+[m[32m# The hook should exit with non-zero status after issuing an[m
+[32m+[m[32m# appropriate message if it wants to stop the commit.  The hook is[m
+[32m+[m[32m# allowed to edit the commit message file.[m
+[32m+[m[32m#[m
+[32m+[m[32m# To enable this hook, rename this file to "applypatch-msg".[m
+[32m+[m
+[32m+[m[32m. git-sh-setup[m
+[32m+[m[32mtest -x "$GIT_DIR/hooks/commit-msg" &&[m
+[32m+[m	[32mexec "$GIT_DIR/hooks/commit-msg" ${1+"$@"}[m
+[32m+[m[32m:[m
+[1mdiff --git a/hooks/commit-msg.sample b/hooks/commit-msg.sample[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b58d118[m
+[1m--- /dev/null[m
+[1m+++ b/hooks/commit-msg.sample[m
+[36m@@ -0,0 +1,24 @@[m
+[32m+[m[32m#!/bin/sh[m
+[32m+[m[32m#[m
+[32m+[m[32m# An example hook script to check the commit log message.[m
+[32m+[m[32m# Called by "git commit" with one argument, the name of the file[m
+[32m+[m[32m# that has the commit message.  The hook should exit with non-zero[m
+[32m+[m[32m# status after issuing an appropriate message if it wants to stop the[m
+[32m+[m[32m# commit.  The hook is allowed to edit the commit message file.[m
+[32m+[m[32m#[m
+[32m+[m[32m# To enable this hook, rename this file to "commit-msg".[m
+[32m+[m
+[32m+[m[32m# Uncomment the below to add a Signed-off-by line to the message.[m
+[32m+[m[32m# Doing this in a hook is a bad idea in general, but the prepare-commit-msg[m
+[32m+[m[32m# hook is more suited to it.[m
+[32m+[m[32m#[m
+[32m+[m[32m# SOB=$(git var GIT_AUTHOR_IDENT
