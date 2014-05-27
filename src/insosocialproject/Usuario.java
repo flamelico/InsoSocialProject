@@ -5,6 +5,9 @@ import java.util.*;
 
 public class Usuario {
     
-    private String nick, nombre, apellido, mail, ciudad, celular, tags,descripcion;
+    private String nick, nombre, apellido, ciudad, descripcion;
     private Date fnacim, fregis;
+    private boolean sexo, enlinea;
+    private int edad;
+    
 }

@@ -1,13 +1,13 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package insosocialproject;
 
-/**
- *
- * @author peru
- */
-public class UsuarioRegistrado {
+import java.util.Date;
+
+public class UsuarioRegistrado extends Usuario{
     
+     
+    private String  mail, celular, tags;
+    private boolean estad, tipomem;
+    private int canterealiz, canteasis,cantden;
+    private float popu;
 }
