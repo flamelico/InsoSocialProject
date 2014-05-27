@@ -2,7 +2,7 @@ package insosocialproject;
 
 public class Grupo extends Categoria{
     
-    int cantden,cantreal,cantpend;
-    double popu;
+    private int cantden,cantreal,cantpend;
+    private double popu;
     
 }
