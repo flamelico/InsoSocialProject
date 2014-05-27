@@ -3,5 +3,7 @@ package insosocialproject;
 
 
 public class PrivacidadUsuario {
-    //asdasjdlkajsdlka
+
+    private boolean verpub;
+    
 }

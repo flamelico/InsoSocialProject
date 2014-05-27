@@ -12,4 +12,6 @@ public class UsuarioCanal {
     private int canterealiz, cantden;
     private float popu;
     
+    
+    
 }
