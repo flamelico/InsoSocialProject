@@ -5,8 +5,15 @@
         <group>
             <file>file:/C:/Users/Luis/Documents/GitHub/InsoSocialProject/src/insosocialproject/PrivacidadEvento.java</file>
             <file>file:/C:/Users/Luis/Documents/GitHub/InsoSocialProject/src/insosocialproject/PrivacidadUsuario.java</file>
+            <file>file:/C:/Users/Luis/Documents/GitHub/InsoSocialProject/src/insosocialproject/UsuarioRegistrado.java</file>
             <file>file:/C:/Users/Luis/Documents/GitHub/InsoSocialProject/src/insosocialproject/Evento.java</file>
+            <file>file:/C:/Users/Luis/Documents/GitHub/InsoSocialProject/src/insosocialproject/UsuarioCanal.java</file>
+            <file>file:/C:/Users/Luis/Documents/GitHub/InsoSocialProject/src/insosocialproject/Categoria.java</file>
+            <file>file:/C:/Users/Luis/Documents/GitHub/InsoSocialProject/src/insosocialproject/Grupo.java</file>
             <file>file:/C:/Users/Luis/Documents/GitHub/InsoSocialProject/src/insosocialproject/PrivacidadGrupo.java</file>
+            <file>file:/C:/Users/Luis/Documents/GitHub/InsoSocialProject/src/insosocialproject/Usuario.java</file>
+            <file>file:/C:/Users/Luis/Documents/GitHub/InsoSocialProject/src/insosocialproject/UsuarioIncognito.java</file>
+            <file>file:/C:/Users/Luis/Documents/GitHub/InsoSocialProject/src/insosocialproject/SuperAdministrador.java</file>
         </group>
     </open-files>
 </project-private>
